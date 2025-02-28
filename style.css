@@ -336,19 +336,21 @@ form .inputval{
 }
 
 
-#dropdown{
+#dropdown {
     background-color: #55555595;
     position: absolute;
     width: 30rem;
-    height: auto;
+    max-height: 800px; /* Set a max height for scrolling */
     padding: 1rem 1rem;
     top: 100%;
     right: 1%;
+    overflow-y: auto; /* Enables scrolling if content exceeds max-height */
     margin-top: .5rem;
     border-radius: 10px;
     border: 1px solid white;
     display: none;
 }
+
 
 .dropdown-header{
     padding: .5rem 1rem;
